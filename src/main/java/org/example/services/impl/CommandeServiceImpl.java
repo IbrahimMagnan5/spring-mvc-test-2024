@@ -12,6 +12,7 @@ public class CommandeServiceImpl implements CommandeService {
    private ArticleRepository articleRepository;
 
     public CommandeServiceImpl(ArticleRepository articleRepository) {
+
         this.articleRepository = articleRepository;
     }
 
