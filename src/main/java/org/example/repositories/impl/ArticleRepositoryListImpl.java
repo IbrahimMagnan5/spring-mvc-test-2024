@@ -1,11 +1,14 @@
-package org.example.repositories.Impl;
+package org.example.repositories.impl;
 
 import org.example.entities.Article;
 import org.example.repositories.ArticleRepository;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-public class ArticleRepositoryBDImpl implements ArticleRepository {
+@Component("repoArticleList")
+
+public class ArticleRepositoryListImpl implements ArticleRepository {
     @Override
     public Article saveArticle(Article article) {
         return null;
@@ -13,7 +16,7 @@ public class ArticleRepositoryBDImpl implements ArticleRepository {
 
     @Override
     public List<Article> getArticles() {
-        System.out.println("liste des articles provenant de la base de donnees");
+        System.out.println("Liste des articles provenant de la list");
         return null;
     }
 }
